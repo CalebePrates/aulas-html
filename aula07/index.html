@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula 07</title>
+</head>
+<body>
+  <form action="javascript:alert('Informações enviadas!');">
+    <fieldset>
+      <legend>Contato:</legend>
+      <label for="nome">Nome:</label>
+      <input id="nome" type="text" placeholder="Insira um texto" name="texto" required/><br><br>
+      <input type="radio" id="html" name="escolha"/>
+      <label for="html">HTML</label><br>
+      <input type="radio" id="css" name="escolha"/>
+      <label for="css">CSS</label><br>
+      <input type="radio" id="js" name="escolha"/>
+      <label for="js">JS</label><br>
+      <br>
+      <input type="checkbox" id="html">
+      <label for="html">HTML</label><br>
+      <input type="checkbox" id="css">
+      <label for="css">CSS</label><br>
+      <input type="checkbox" id="js">
+      <label for="js">JS</label><br><br>
+      
+      <label for="email">Email:</label><br>
+      <input id="email" type="email" required>
+      <br>
+      <br>
+      <label for="senha">Senha:</label><br>
+      <input id="senha" type="password" min="6" max="10" required>
+      <br>
+      <br>
+      <label for="numero">Numero:</label><br>
+      <input id="numero" type="number">
+      <br>
+      <br>
+      <label for="descricao">Descrição:</label><br>
+      <input id="descricao" type="date" min="2024-01-01" max="2024-12-31">
+      <br>
+      <br>
+      <textarea rows="10" cols="30">
+        Sua descrição
+      </textarea>
+      <br>
+      <br>
+      <select id="carros">
+        <optgroup label="Versão Sport">
+          <option value="civic">Civic</option>
+        </optgroup>
+        <optgroup label="Versão Comum">
+          <option value="vectra">Vectra</option>
+          <option value="monza">Monza</option>
+        </optgroup>
+      </select>
+      <br>
+      <br>
+      <label for="arquivo">Envie um arquivo:</label>
+      <input type="file" multiple>
+      <br>
+      <br>
+      <input type="range" min="0" max="10">
+      
+      <br>
+      <br>
+      <button type="submit">ENVIAR</button>
+    </fieldset>
+  </form>
+</body>
+</html>
